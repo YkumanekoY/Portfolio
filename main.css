@@ -1,0 +1,18 @@
+nav {
+    border-radius: 10px;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    background: rgb(6, 27, 72);
+    opacity: 0.8;
+    margin-bottom: 30px;
+    position: fixed;
+    width: 100%;
+    min-width: 900px;
+}
+
+nav li {
+    float: left;
+    list-style-type: none;
+}
