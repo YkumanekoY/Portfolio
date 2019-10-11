@@ -3,54 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yua's Portfolio</title>
     <link rel="stylesheet" href="main.css">
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- ＃リンクのスムーズスクロール -->
-    <script>
-        $(function() {
-            // #で始まるリンクをクリックしたら実行されます
-            $('a[href^="#"]').click(function() {
-                // スクロールの速度
-                var speed = 400; // ミリ秒で記述
-                var href = $(this).attr("href");
-                var target = $(href == "#" || href == "" ? 'html' : href);
-                var position = target.offset().top;
-                $('body,html').animate({
-                    scrollTop: position
-                }, speed, 'swing');
-                return false;
-            });
-        });
-    </script>
 </head>
 
 <body>
-    <nav>
-        <ul class="inner_container">
-            <li><a href="#top">top</a></li>
-            <li> <a href="#aboutMe">about me</a></li>
-            <li><a href="#works">works</a></li>
-            <li><a href="#contact">contact</a></li>
-        </ul>
-    </nav>
-    <div id="top">
-
+    <div class="header">
+        <div class="header-list">
+            <ul>
+                <li>Top</li>
+                <li>About me</li>
+                <li>Works</li>
+                <li>Contact</li>
+            </ul>
+        </div>
     </div>
-    <div id="aboutMe">
 
-    </div>
-    <div id="aboutMe">
-
-    </div>
-    <div id="works">
-
-    </div>
-    <div id="contact">
-
-    </div>
+    <!-- <div class="top-image"><img href="./resources/Day1_160のコピー.jpg"></div> -->
 </body>
 
 </html>
